@@ -23,5 +23,18 @@ public class BaseballGameTest {
         assertEquals(answer.size(), 3);
     }
 
+    @Test
+    @DisplayName("올바르지 않은 숫자를 입력하면 예외가 발생한다.")
+    void checkValidNumberIfNotThrowException() throws Exception {
+        //given
+        BaseballGame baseballGame = new BaseballGame();
+
+        //when
+        //then
+        assertThatThrownBy(() -> baseballGame.inputNumber(IN_VALID_NUMBER))
+                .isInstanceOf(IllegalArgumentException.class);
+    }
+
+
 }
 
