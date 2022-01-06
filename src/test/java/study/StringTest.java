@@ -32,4 +32,13 @@ public class StringTest {
 
         assertThat(split).contains("1");
     }
+
+    @Test
+    void subString() throws Exception{
+        String oneAndTwo = "(1,2)";
+
+        String substring = oneAndTwo.substring(1, oneAndTwo.length()-1);
+
+        assertThat(substring).isEqualTo("1,2");
+    }
 }
