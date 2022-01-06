@@ -31,4 +31,13 @@ public class SetTest {
         assertThat(size).isEqualTo(3);
     }
 
+    @ParameterizedTest
+    @ValueSource(ints = {1, 2, 3})
+    void checkContainNumber(int input) {
+
+        assertThat(number.contains(input)).isTrue();
+        
+    }
+
+
 }
