@@ -1,4 +1,6 @@
-package numberBaseballGame;
+package study.numberBaseballGame;
+
+import numberBaseballGame.BaseballGame;
 
 import java.util.Scanner;
 
@@ -8,7 +10,7 @@ public class GameUI {
     static Scanner scanner = new Scanner(System.in);
 
     public void start() {
-        BaseballGame baseballGame = new BaseballGame();
+        numberBaseballGame.BaseballGame baseballGame = new BaseballGame();
         int[] answer = baseballGame.getAnswer();
 
         for (int i : answer) {
