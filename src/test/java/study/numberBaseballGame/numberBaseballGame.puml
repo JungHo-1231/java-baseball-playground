@@ -1,0 +1,10 @@
+@startuml
+
+object "BaseBall" as bb
+object "Balls" as bs
+object "BallNumber" as bn
+
+bb -right-> bs
+bs -right-> bn : 3
+
+@enduml
